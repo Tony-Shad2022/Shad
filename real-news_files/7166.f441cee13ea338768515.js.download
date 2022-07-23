@@ -1,0 +1,1 @@
+"use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[7166],{87166:function(s,t,o){var _=o(34637),e=o(56552),u=function(s){var t=s.children,o=s.statusCode,u=s.polopolyId;return 2!==(s.statusCode/100|0)?(0,e.jsx)(_.default,{statusCode:o,polopolyId:u}):t};u.defaultProps={statusCode:200},t.Z=u}}]);

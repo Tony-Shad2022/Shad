@@ -1,0 +1,279 @@
+@font-face {
+	font-family: 'Duarte Centenario';
+	src: url('/fonts/duarte_centenario.eot');
+	src: local('Duarte Centenario'), url('/fonts/duarte_centenario.woff') format('woff');
+}
+
+body {
+	color:#cfc !important;
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 16px;
+	background-color: #594;
+	background-image: url("../treeoctopus/greentexture.jpg");
+}
+
+body {
+	scrollbar-face-color: #8c8;
+	scrollbar-shadow-color: #8c8;
+	scrollbar-highlight-color: #8c8;
+	scrollbar-3dlight-color: #8c8;
+	scrollbar-darkshadow-color: #8c8;
+	scrollbar-base-color: #040;
+	scrollbar-track-color: #040;
+	scrollbar-arrow-color: #040;
+}
+
+.layout {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 190px minmax(500px, 762px) 1fr;
+	padding: 10px 0px;
+	column-gap: 10px;
+}
+
+.sidebar {
+	grid-column: 2 / 3;
+	grid-row: 1 / 1;
+}
+.body {
+	grid-column: 3 / 4;
+	grid-row: 1 / 1;
+}
+
+.box,
+.body		{color: #cfc !important;}
+
+h4		{font-size: 1em; font-weight: bold;}
+h3		{font-size: 1.2em; font-weight: normal;}
+h2		{font-size: 1.3em; font-weight: bold;}
+h1		{font-size: 1.6em; font-weight: bold;}
+h1,h2,h3,h4	{margin: 0px;}
+a		{text-decoration: none; font-weight: bold;}
+a:link		{color: #8d8;}
+a:visited	{color: #8d8;}
+a:focus,
+a:hover		{color: #eca; text-decoration: underline;}
+a img		{border: 0px;}
+li		{margin-bottom: 6px;}
+sup		{line-height: 0px;}
+
+.center		{text-align: center;}
+.outline	{border: 1px solid #262;}
+.divide		{border-top: 2px solid #6a6;}
+.fine		{font-size: .8em;}
+
+.indent		{margin: 20px;}
+.indent p	{text-align: justify;}
+
+.sidebar	{text-align: center; margin: 0px; padding: 0px 0px 0px 0px;}
+.sidebar h3	{font-family: Duarte Centenario; font-size: 1.2em; text-align: center;}
+.sidebar h4	{font-size: 1em;}
+
+.body {
+	background-color: #010;
+	border: solid #6a6 2px;
+	padding: 4px;
+	border-radius: 15px 15px 15px 15px;
+}
+.body h3	{font-family: Duarte Centenario; font-size: 1.3em; border-bottom: 1px solid #373; padding-left: 6px;}
+.body h4	{font-family: Duarte Centenario; font-weight: normal;}
+.body dt	{font-weight: bold; border-bottom: 1px solid #6a6;}
+.body dd	{margin: 10px;}
+
+.title {
+	text-align: center;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	background: #010 url("../treeoctopus/title_back.png") repeat-x;
+	height: 150px;
+}
+.title_small {
+	background: url("../treeoctopus/title_back_sm.png") repeat-x;
+	height: 100px;
+}
+.title		{border-radius: 10px 10px 10px 10px;}
+.title	h3	{border: none;}
+.title_text {
+	width: 500px;
+	height: 150px;
+	margin: auto;
+	background-image: url('../treeoctopus/title_text.png');
+}
+.title_text h1,
+.title_text h3	{visibility: hidden;}
+.title_text_small {
+	height: 100px;
+	background-image: url('../treeoctopus/title_text_sm.png');
+}
+
+.menu		{font-weight: bold; font-size: .9em; margin: 8px 0px; padding: 0px 0px 0px 16px; border-bottom: 2px solid #6a6;}
+.menu li	{display: inline; margin: 0px 2px;}
+.menu a		{border: 2px solid #6a6; padding: 0px 8px; background: #141;}
+.menu li,
+.menu a		{border-radius: 10px 10px 0px 0px;}
+li.menu-current	{border: 2px solid #6a6; border-bottom-color: #010; margin: 0px 6px; padding: 0px 8px; background: #010;}
+.menu a:focus,
+.menu a:hover	{text-decoration: none; color: #cfc;}
+.menu-flip	{border-bottom: none; border-top: 2px solid #6a6;}
+.menu-flip a,
+.menu-flip li	{border-radius: 0px 0px 10px 10px;}
+.menu-flip li.menu-current	{border-top-color: #010; border-bottom-color: #6a6;}
+
+.photo {
+	margin-left: 8px;
+	margin-bottom: 4px;
+	padding: 1px;
+	background-color: #262;
+	font-size: .8em;
+	text-align: right;
+	float: right;
+}
+
+.box {
+	margin-bottom: 10px;
+	padding: 0px 6px 6px 6px;
+	background-color: #030;
+	border: solid 1px #6a6;
+	text-align: left;
+	border-radius: 6px;
+}
+.box p		{text-indent: 10px;}
+.box h4		{text-align: center; margin-top: 8px;}
+.box h3		{border-bottom: 1px solid #6a6;}
+
+.sighting	{margin: 20px; text-align: justify; border-top: 6px solid #6a6; margin-top: 20px; clear: both;}
+.letter		{margin-top: 20px; background-color: #020; border: 1px solid #6a6; padding: 10px;}
+.letter p,
+.letter em	{font-family: monospace;}
+.letter h4	{font-family: monospace; font-weight: bold;}
+.subject	{font-family: monospace; border-bottom: 1px solid #040; margin: 0px;}
+
+.cephnews	{font-size: .8em;}
+.cephnews dt	{margin-top: 4px;}
+.cephnews dd	{padding-left: 0px; margin-left: 10px;}
+ul.cephnews	{margin: 0px; padding: 0px;}
+.cephnews b	{font-size: .7em;}
+.cephnews li	{margin: 0px; padding: 0px; list-style: none;}
+
+.video		{text-align: center !important;}
+
+.table		{display: table;}
+.table-leftimg	{display: table-cell; padding-right: 20px; vertical-align: middle; text-align: center; width: 200px;}
+.table-text	{display: table-cell; vertical-align: top;}
+
+#jjzapato span {
+	position: absolute;
+	top: 2rem;
+	z-index: 100;
+	left:-800px;
+	transition: left 400ms ease-in;
+	display: block;
+	width: 400px;
+	height: 300px; 
+	border: 4px solid black;
+	border-radius: 10px;
+	background-image: url("/treeoctopus/get_me_pictures_of_tree_octopuses.jpg");
+}
+#jjzapato:hover span {
+	left: 1rem;
+}
+
+
+@media only screen and (max-device-width:800px) and (orientation: portrait)
+{
+body		{border: none; border-radius:0px; background-image: none;}
+
+.sidebar {
+	grid-column: 2 / 4;
+	grid-row: 2 / 2;
+}
+.body {
+	grid-column: 2 / 4;
+	grid-row: 1 / 1;
+}
+
+.sidebar h3	{font-size:1.2em;}
+.sidebar h4	{font-size:1em;}
+.menu		{font-size:.9em; padding:0px 0px 0px 10px;}
+.menu li	{margin:0px;}
+.body dt	{font-size:1.2em;}
+h4		{font-size:1.2em;}
+h3		{font-size:1.4em; font-weight: bold;}
+h2		{font-size:1.5em;}
+h1		{font-size:1.6em;}
+.cephnews	{font-size:1em}
+.cephnews b	{font-size:.8em}
+.photo		{font-size:1.5em; width:40% !important; height: auto;}
+.photo img	{width:100%; height: auto;}
+
+.table-leftimg	{width:40% !important;}
+.table-leftimg img	{width:100%; height: auto;}
+
+#jjzapato span {display: none;}
+
+.video {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+.video iframe, .video object, .video embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(255,128,128);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid rgb(255, 0, 0);
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p {
+  color: black;
+}
+
+.modal-btn {
+  
+  height: 30px;
+  border-radius: 5px;
+  color: black;
+}
